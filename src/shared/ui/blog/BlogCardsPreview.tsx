@@ -1,4 +1,4 @@
-import BlogCard from './BlogCard';
+import BlogCard from './blogCard/BlogCard';
 
 const hoverEffectVariants = ['default', 'withIcon', 'withoutIcon'] as const;
 const cardVariants = ['withBorder', 'withoutBorder'] as const;

@@ -1,4 +1,4 @@
-import NewsCard from './NewsCard';
+import NewsCard from './newsCard/NewsCard';
 
 const hoverEffectVariants = ['default', 'withIcon', 'withoutIcon'] as const;
 const cardVariants = ['withBorder', 'withoutBorder'] as const;
@@ -48,7 +48,9 @@ export default function NewsCardsPreview() {
               >
                 <NewsCard
                   image={sampleImage}
+                  imageSize={properties.size}
                   title="Breaking News: Latest Developments in Tech"
+                  titleSize={properties.size}
                   date="Feb 15, 2024"
                   preview={
                     properties.hoverEffectVariant !== 'withIcon'
@@ -58,7 +60,6 @@ export default function NewsCardsPreview() {
                   onClick={() => {}}
                   withBorder={cardVariant === 'withBorder'}
                   hoverEffectVariant={properties.hoverEffectVariant}
-                  size={properties.size}
                   showReadMoreButton={true}
                 />
               </div>

@@ -1,4 +1,4 @@
-import GalleryCard from './GalleryCard';
+import GalleryCard from './galleryCard/GalleryCard';
 
 const hoverEffectVariants = ['default', 'withIcon', 'withoutIcon'] as const;
 const cardVariants = [

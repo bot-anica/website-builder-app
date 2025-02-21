@@ -1,7 +1,7 @@
-import InputField from './InputField';
-import TextareaField from './TextareaField.tsx';
-import SelectField from './SelectField.tsx';
-import LittleSelectField from './LittleSelectField.tsx';
+import InputField from './inputField/InputField.tsx';
+import TextareaField from './textareaField/TextareaField.tsx';
+import SelectField from './selectField/SelectField.tsx';
+import LittleSelectField from './littleSelectField/LittleSelectField.tsx';
 
 const formFieldStatus = ['warning', 'error', 'success'];
 const formFieldHasError = ['hasError', 'withoutError'];
@@ -200,13 +200,7 @@ export default function FormFieldsPreview() {
                   required
                   // disabled
                   hint="Hint message"
-                  status={
-                    properties.status as
-                      | 'default'
-                      | 'warning'
-                      | 'error'
-                      | 'success'
-                  }
+                  status={properties.status as 'default' | 'error' | 'success'}
                 />
               </div>
             ))}

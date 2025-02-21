@@ -1,6 +1,6 @@
 import PlusIcon from '../../assets/icons/PlusIcon';
-import IconButton from './IconButton';
-import StandardButton from './StandardButton';
+import IconButton from './iconButton/IconButton';
+import StandardButton from './standardButton/StandardButton';
 
 const buttonSizes = ['large', 'medium', 'small', 'extra-small'] as const;
 const buttonVariants = ['primary', 'secondary', 'tertiary'] as const;
